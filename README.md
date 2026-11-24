@@ -28,7 +28,7 @@
 
 ## Télécharger
 
-**[⬇ LolSettings (Windows 10/11, 64 bits)](https://github.com/Robert229919/LolSettings/releases/latest)**. Un seul `.exe` (nécessite le runtime .NET 10 Desktop). Il n'est pas signé : si SmartScreen s'affiche, clique sur « Informations complémentaires » puis « Exécuter quand même ».
+**[⬇ LolSettings (Windows 10/11, 64 bits)](https://github.com/Robert229919/LolSettings/releases/latest)**. Un seul `.exe` (runtime .NET inclus, rien à installer à part WebView2 s'il manque). Il n'est pas signé : si SmartScreen s'affiche, clique sur « Informations complémentaires » puis « Exécuter quand même ».
 
 ## Utilisation
 
@@ -53,7 +53,7 @@ Prérequis : Windows 10/11, [.NET 10 SDK](https://dotnet.microsoft.com/download)
 dotnet publish src\LolSettings -c Release -o dist
 ```
 
-L'exécutable est `dist\LolSettings.exe` (nécessite le runtime .NET 10 Desktop). Un workflow GitHub Actions (`.github/workflows/build.yml`) le compile aussi.
+L'exécutable est `dist\LolSettings.exe` (runtime .NET inclus, rien à installer à part WebView2 s'il manque). Un workflow GitHub Actions (`.github/workflows/build.yml`) le compile aussi.
 
 ## Structure
 
