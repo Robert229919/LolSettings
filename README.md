@@ -26,11 +26,20 @@
 - **Exporter / importer** un profil en fichier `.lolprofile` ou en code à partager.
 - **Sauvegarde automatique** du compte cible avant chaque application, supprimée au bout d'1 h.
 
+## Télécharger
+
+**[⬇ LolSettings (Windows 10/11, 64 bits)](https://github.com/Robert229919/LolSettings/releases/latest)**. Un seul `.exe` (nécessite le runtime .NET 10 Desktop). Il n'est pas signé : si SmartScreen s'affiche, clique sur « Informations complémentaires » puis « Exécuter quand même ».
+
 ## Utilisation
 
-1. Ouvre le **client League of Legends**, connecte-toi au compte source → **+ Enregistrer**.
-2. Change de compte (**pas de partie en cours**, client ouvert).
-3. **Profils** → **Appliquer →** → choisis les catégories → **Appliquer**.
+1. Ouvre le **launcher League of Legends** avec le compte qui a les bonnes touches, puis clique sur **+ Enregistrer**.
+2. **Ferme le launcher** (et le jeu). Laisse LolSettings ouvert.
+3. **Rouvre le launcher avec le nouveau compte** (pas de partie en cours).
+4. **Profils** → **Appliquer →** → choisis les catégories → **Appliquer**.
+
+Ce guide est aussi affiché dans l'appli (onglet Comptes → « Comment ça marche »).
+
+**Mises à jour** : au démarrage, LolSettings regarde sur GitHub si une nouvelle version est sortie et te demande si tu veux la télécharger. Seule une requête vers l'API publique de GitHub est faite, aucune donnée perso n'est envoyée.
 
 Les profils sont stockés dans `%APPDATA%\LolSettings\profiles`.
 
