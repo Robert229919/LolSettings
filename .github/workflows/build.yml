@@ -1,0 +1,17 @@
+name: build
+on:
+  push:
+  workflow_dispatch:
+jobs:
+  build:
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: 10.0.x
+      - run: dotnet publish src/LolSettings -c Release -o dist
+      - uses: actions/upload-artifact@v4
+        with:
+          name: LolSettings
+          path: dist/LolSettings.exe
